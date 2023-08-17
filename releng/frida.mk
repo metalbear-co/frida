@@ -9,14 +9,14 @@ frida_gum_flags := \
 	--default-library static \
 	$(FRIDA_FLAGS_COMMON) \
 	-Djailbreak=$(FRIDA_JAILBREAK) \
-	-Dgumpp=enabled \
-	-Dgumjs=enabled \
+	-Dgumpp=disabled \
+	-Dgumjs=disabled \
 	-Dv8=$(FRIDA_V8) \
 	-Ddatabase=$(FRIDA_DATABASE) \
 	-Dfrida_objc_bridge=$(FRIDA_OBJC_BRIDGE) \
 	-Dfrida_swift_bridge=$(FRIDA_SWIFT_BRIDGE) \
 	-Dfrida_java_bridge=$(FRIDA_JAVA_BRIDGE) \
-	-Dtests=enabled \
+	-Dtests=disabled \
 	$(NULL)
 frida_core_flags := \
 	--default-library static \
