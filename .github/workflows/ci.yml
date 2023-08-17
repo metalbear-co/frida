@@ -63,7 +63,7 @@ jobs:
     needs: frida-linux
     strategy:
       matrix:
-        arch: [x86, x86_64, x86_64-musl, armhf, arm64, arm64-musl, mips, mipsel, mips64, mips64el]
+        arch: [x86_64, x86_64-musl, arm64, arm64-musl]
     runs-on: ubuntu-latest
     steps:
       - name: Check out repo
