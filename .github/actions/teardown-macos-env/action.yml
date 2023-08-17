@@ -9,5 +9,4 @@ runs:
         rm -f ~/.cfcli.yml
         rm -rf ~/.aws
         rm -f ~/.gitconfig
-        security delete-keychain $RUNNER_TEMP/frida-signing.keychain-db
-      shell: bash
+      shell: bash #security delete-keychain $RUNNER_TEMP/frida-signing.keychain-db
