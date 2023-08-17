@@ -4,17 +4,17 @@ PREFIX ?= /usr
 FRIDA := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
 # Features ordered by binary footprint, from largest to smallest
-FRIDA_V8 ?= no
-FRIDA_CONNECTIVITY ?= no
-FRIDA_DATABASE ?= no
-FRIDA_JAVA_BRIDGE ?= no
-FRIDA_OBJC_BRIDGE ?= no
-FRIDA_SWIFT_BRIDGE ?= no
+FRIDA_V8 ?= disabled
+FRIDA_CONNECTIVITY ?= disabled
+FRIDA_DATABASE ?= disabled
+FRIDA_JAVA_BRIDGE ?= disabled
+FRIDA_OBJC_BRIDGE ?= disabled
+FRIDA_SWIFT_BRIDGE ?= disabled
 
 FRIDA_AGENT_EMULATED ?= no
 
 # Include jailbreak-specific integrations
-FRIDA_JAILBREAK ?= no
+FRIDA_JAILBREAK ?= disabled
 
 FRIDA_ASAN ?= no
 
